@@ -9,7 +9,7 @@ function sum(a, b) {
   return result;
 }
 
-// Factorial of a Number
+// Factorial of a Numbe
 function factorial(n) {
   if (typeof n !== 'number') {
     console.log('Los datos de entrada no son adecuados');
