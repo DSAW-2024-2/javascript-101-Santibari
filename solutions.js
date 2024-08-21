@@ -1,9 +1,8 @@
 // Sum of Two Numbers
 function sum(a, b) {
-  // Verificar que ambos argumentos sean números
   if (typeof a !== 'number' || typeof b !== 'number') {
-    console.log('Ambos argumentos deben ser números');
-    return 'Ambos argumentos deben ser números';
+    console.log('Los datos de entrada no son adecuados');
+    return 'Los datos de entrada no son adecuados';
   }
   const result = a + b;
   console.log(`La suma de ${a} y ${b} es: ${result}`);
@@ -12,12 +11,10 @@ function sum(a, b) {
 
 // Factorial of a Number
 function factorial(n) {
-  // Verificar que el argumento sea un número
   if (typeof n !== 'number') {
-    console.log('El argumento debe ser un número');
-    return 'El argumento debe ser un número';
+    console.log('Los datos de entrada no son adecuados');
+    return 'Los datos de entrada no son adecuados';
   }
-  // Manejar casos especiales para números negativos y casos base
   if (n < 0) {
     console.log('El factorial no está definido para números negativos');
     return 'No es un definido';
@@ -36,12 +33,10 @@ function factorial(n) {
 
 // Find the Largest Number
 function findLargest(arr) {
-  // Verificar que el argumento sea un array de números
   if (!Array.isArray(arr) || arr.some(item => typeof item !== 'number')) {
-    console.log('El argumento debe ser un array de números');
-    return 'El argumento debe ser un array de números';
+    console.log('Los datos de entrada no son adecuados');
+    return 'Los datos de entrada no son adecuados';
   }
-  // Manejar el caso de array vacío
   if (arr.length === 0) {
     console.log('El array está vacío');
     return 'Array is empty';
@@ -53,10 +48,9 @@ function findLargest(arr) {
 
 // Count Vowels in a String
 function countVowels(str) {
-  // Verificar que el argumento sea una cadena de texto
   if (typeof str !== 'string') {
-    console.log('El argumento debe ser una cadena de texto');
-    return 'El argumento debe ser una cadena de texto';
+    console.log('Los datos de entrada no son adecuados');
+    return 'Los datos de entrada no son adecuados';
   }
   const vowels = 'aeiouAEIOU';
   let count = 0;
@@ -71,10 +65,9 @@ function countVowels(str) {
 
 // Check if a Number is Prime
 function isPrime(n) {
-  // Verificar que el argumento sea un número
   if (typeof n !== 'number') {
-    console.log('El argumento debe ser un número');
-    return 'El argumento debe ser un número';
+    console.log('Los datos de entrada no son adecuados');
+    return 'Los datos de entrada no son adecuados';
   }
   if (n <= 1) {
     console.log(`${n} no es un número primo`);
